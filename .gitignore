@@ -1,82 +1,27 @@
-# ══════════════════════════════════════════════════
-#  StudyMate .gitignore (Final)
-# ══════════════════════════════════════════════════
-
-# ── 환경변수 (절대 커밋 금지) ──────────────────────
-.env
-.env.local
-.env.*.local
-
-# ── 데이터베이스 ────────────────────────────────────
-*.db
-*.sqlite
-*.sqlite3
-server/studymate.db
-server/*.db*
-
-# ── 업로드 파일 (디렉토리는 유지) ─────────────────
-server/uploads/*
-!server/uploads/.gitkeep
-
-# ── 의존성 ──────────────────────────────────────────
+# Dependencies
 node_modules/
-.npm/
-.pnpm-store/
-.yarn/
 
-# ── 빌드 / 캐시 ─────────────────────────────────────
-dist/
-.cache/
-.parcel-cache/
-.next/
-.nuxt/
-.expo/
+# Database (auto-generated on first run)
+server/studymate.db
+server/studymate.db-shm
+server/studymate.db-wal
 
-# ── 로그 ────────────────────────────────────────────
-*.log
-logs/
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
+# Uploaded files
+server/uploads/
 
-# ── 에디터 ──────────────────────────────────────────
+# Environment variables
+.env
+
+# OS / Editor
+.DS_Store
+Thumbs.db
 .vscode/
 .idea/
-*.swp
-*.swo
-*~
 
-# ── OS ──────────────────────────────────────────────
-.DS_Store
-.DS_Store?
-._*
-.Spotlight-V100
-.Trashes
-Thumbs.db
-ehthumbs.db
-Desktop.ini
+# Logs
+*.log
+npm-debug.log*
 
-# ── 테스트 / 커버리지 ────────────────────────────────
-coverage/
-.nyc_output/
-jest-cache/
-jest-results/
-
-# ── 임시 파일 ───────────────────────────────────────
-tmp/
-temp/
-*.tmp
-*.bak
-*.tar
-*.zip
-*.gz
-
-# ── 보안 키 / 인증서 ────────────────────────────────
-*.pem
-*.key
-*.crt
-*.pub
-
-# ── 프로세스 관리 / CI ──────────────────────────────
-.pm2/
-.scannerwork/
+# etc
+[C
+[C.pub
