@@ -25,3 +25,7 @@ npm-debug.log*
 # etc
 [C
 [C.pub
+*.pem
+*.key
+*.pub
+id_rsa*
